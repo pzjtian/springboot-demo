@@ -1,0 +1,3 @@
+myconfig:
+  import:
+    name: "yml import config"

@@ -1,5 +1,8 @@
+//apply plugin: 'java'
+
 plugins {
     id 'java'
+    id 'org.springframework.boot' version '2.0.0.RELEASE'
 }
 
 group 'com.gzb.demo'
@@ -21,4 +24,13 @@ allprojects {
 dependencies {
     compile 'org.springframework.boot:spring-boot-starter-parent:2.4.3'
     compile 'org.springframework.boot:spring-boot-starter-web:2.4.3'
+    compile 'javax.validation:validation-api:1.1.0.Final'
+    compile 'org.hibernate:hibernate-validator:6.0.18.Final'
+    compileOnly 'org.springframework.boot:spring-boot-configuration-processor'
+
+}
+
+
+bootJar {
+    mainClassName = 'com.gzb.springboot.helloworld.HelloWorld'
 }

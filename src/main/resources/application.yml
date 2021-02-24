@@ -1,0 +1,26 @@
+book:
+  name: "Java"
+spring:
+  config:
+    import: "classpath:my-dev.yml"
+  #import: optional:file:E:\\workspace\\springBoot-demo\\src\\main\\resources\\dev.properties
+  profiles:
+    active: dev
+  app:
+    name: "springboot-demo"
+    descript: "${spring.app.name} is a springboot application"
+
+
+rand:
+  number: ${random.value}
+  intNumber: ${random.int}
+  longNumber: ${random.long}
+  uuid: ${random.uuid}
+
+
+#jdbc:
+#  connection:
+#    url: "jdbc:mysql://localhost:3306/testdb"
+#    user-name: "root"
+#    passwrod: "123456"
+#    driver: "com.mysql.jdbc.Driver"
