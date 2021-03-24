@@ -10,6 +10,16 @@ spring:
     name: "springboot-demo"
     descript: "${spring.app.name} is a springboot application"
 
+  output:
+    ansi:
+      enabled: detect
+
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/testdb1?useUnicode=true&characterEncoding=UTF8
+    username: root
+    password: 123456
+
 
 rand:
   number: ${random.value}
@@ -18,9 +28,7 @@ rand:
   uuid: ${random.uuid}
 
 
-#jdbc:
-#  connection:
-#    url: "jdbc:mysql://localhost:3306/testdb"
-#    user-name: "root"
-#    passwrod: "123456"
-#    driver: "com.mysql.jdbc.Driver"
+##debug: true
+logging:
+  file:
+    name: my.log

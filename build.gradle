@@ -26,7 +26,14 @@ dependencies {
     compile 'org.springframework.boot:spring-boot-starter-web:2.4.3'
     compile 'javax.validation:validation-api:1.1.0.Final'
     compile 'org.hibernate:hibernate-validator:6.0.18.Final'
-    compileOnly 'org.springframework.boot:spring-boot-configuration-processor'
+    //compile 'com.fasterxml.jackson.dataformat:jackson-dataformat-xml:2.11.2'
+    compile 'com.alibaba:fastjson:1.2.58'
+    compile 'org.glassfish.jaxb:jaxb-runtime:2.3.3'
+
+    //jdbc
+    compile 'org.springframework.boot:spring-boot-starter-jdbc:2.4.3'
+    compile 'mysql:mysql-connector-java:5.1.45'
+    //compileOnly 'org.springframework.boot:spring-boot-configuration-processor'
 
 }
 

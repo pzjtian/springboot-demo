@@ -3,3 +3,9 @@ book:
 
 file:
   upload: D:\upload
+
+
+
+spring:
+  mvc:
+    static-path-pattern: "/resources/**"
